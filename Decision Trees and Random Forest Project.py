@@ -14,18 +14,14 @@ loans.head()
 loans.info()
 
 plt.figure(figsize=(10,6))
-loans[loans['not.fully.paid']==1]['fico'].hist(alpha=0.5,color='blue',
-                                              bins=30,label='not.fully.paid=1')
-loans[loans['not.fully.paid']==0]['fico'].hist(alpha=0.5,color='red',
-                                              bins=30,label='not.fully.paid=0')
+loans[loans['not.fully.paid']==1]['fico'].hist(alpha=0.5,color='blue',bins=30,label='not.fully.paid=1')
+loans[loans['not.fully.paid']==0]['fico'].hist(alpha=0.5,color='red',bins=30,label='not.fully.paid=0')
 plt.legend()
 plt.xlabel('FICO')
 
 plt.figure(figsize=(10,6))
-loans[loans['credit.policy']==1]['fico'].hist(alpha=0.5,color='blue',
-                                              bins=30,label='Credit.Policy=1')
-loans[loans['credit.policy']==0]['fico'].hist(alpha=0.5,color='red',
-                                              bins=30,label='Credit.Policy=0')
+loans[loans['credit.policy']==1]['fico'].hist(alpha=0.5,color='blue',bins=30,label='Credit.Policy=1')
+loans[loans['credit.policy']==0]['fico'].hist(alpha=0.5,color='red',bins=30,label='Credit.Policy=0')
 plt.legend()
 plt.xlabel('FICO')
 
