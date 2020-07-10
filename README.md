@@ -6,4 +6,5 @@ Pierian Data: https://www.pieriandata.com
 
 # Natural Language Processing Yelp Data
 
-For this project I used the material taught in class in order to perform a combination of machine learning techniques to analyse Yelp Text Data. The primary dataset used for this project was provided by the course. 
+For this project I used the material taught in class in order to perform a combination of machine learning techniques to analyze the Yelp Review Data Set from Kaggle (https://www.kaggle.com/c/yelp-recsys-2013). I attempt to classify Yelp Reviews into 1 star or 5 star categories based off the text content in the reviews.
+
