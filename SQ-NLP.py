@@ -4,7 +4,6 @@
 import numpy as np
 import pandas as pd
 
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 sns.set_style('white')
@@ -13,10 +12,6 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 yelp = pd.read_csv('yelp.csv')
 
 yelp['text length'] = yelp['text'].apply(len)
-
-
-# In[12]:
-
 
 g = sns.FacetGrid(yelp,col='stars')
 g.map(plt.hist,'text length',bins=60)
